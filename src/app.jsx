@@ -1,9 +1,14 @@
 import {useState,useEffect} from 'preact/hooks'
+import express from 'express'
+import cors from 'cors'
 import { databases } from './lib/appwrite'
 import {ID} from 'appwrite'
 import './app.css'
 
 export function App() {
+
+  const app = express()
+  app.use(cors())
 
   const id_collection = '65bac118125fc9cb609c'
   const id_db = '65bac0ca8c54fd783b76'

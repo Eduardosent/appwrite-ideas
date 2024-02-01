@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "appwrite": "^13.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
     "preact": "^10.19.3"
   },
   "devDependencies": {
